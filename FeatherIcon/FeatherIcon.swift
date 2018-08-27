@@ -11,7 +11,7 @@ import UIKit
 public extension UIFont {
     private struct Constants {
         static let fontName = "feather"
-        static let fileName = "feather.ttf"
+        static let fileName = "feather"
     }
     
     public class func featherFont(size: CGFloat) -> UIFont? {
