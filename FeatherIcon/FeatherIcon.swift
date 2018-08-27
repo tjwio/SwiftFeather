@@ -15,11 +15,12 @@ public extension UIFont {
     }
     
     public class func featherFont(size: CGFloat) -> UIFont? {
+        loadFeatherFont()
         return UIFont(name: "feather", size: size)
     }
     
     public class func loadFeatherFont() {
-        if !UIFont.fontNames(forFamilyName: Constants.fontName).isEmpty {
+        guard !UIFont.fontNames(forFamilyName: Constants.fontName).isEmpty else {
             return
         }
         
