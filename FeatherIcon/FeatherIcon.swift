@@ -20,7 +20,7 @@ public extension UIFont {
     }
     
     public class func loadFeatherFont() {
-        guard !UIFont.fontNames(forFamilyName: Constants.fontName).isEmpty else {
+        guard UIFont.fontNames(forFamilyName: Constants.fontName).isEmpty else {
             return
         }
         
